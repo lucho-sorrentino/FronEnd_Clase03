@@ -56,13 +56,33 @@
 
 /* ################ EJERCICIO 5 #########################*/
 
-let valorMetro = prompt("Por favor ingrese el valor que desea convertir a metros");
-let pies = parseFloat(valorMetro) * parseFloat(3.28);
-let cms = parseFloat(valorMetro) * parseInt(100);
-let pulgadas = parseFloat(valorMetro) * parseFloat(39.38);
-console.log((pies) + " " + "ft");
-console.log((cms) + " " + "cms");
-console.log((pulgadas) + " " + "in");
+// let valorMetro = prompt("Por favor ingrese el valor que desea convertir a metros");
+// let pies = parseFloat(valorMetro) * parseFloat(3.28);
+// let cms = parseFloat(valorMetro) * parseInt(100);
+// let pulgadas = parseFloat(valorMetro) * parseFloat(39.38);
+// console.log((pies) + " " + "ft");
+// console.log((cms) + " " + "cms");
+// console.log((pulgadas) + " " + "in");
+
+
+
+
+/* ################ EJERCICIO 6 #########################*/
+// 6) Solicitar al usuario dos números y mostrar el resultado de la suma. Luego solicitar al usuario un tercer número y multiplicarlo por el resultado anterior. Mostrar el resultado final.
+
+// let number1 = prompt("Ingrese un número");
+// let number2 = prompt("Ingrese un número nuevamente");
+// let suma = alert(parseInt(number1) + parseInt(number2));
+// let number3 = prompt("Vuelva a ingresar un número");
+// alert((parseInt(number1) + parseInt(number2)) * parseInt(number3));
+
+
+
+
+/* ################ EJERCICIO 7 #########################*/
+// 7) Armar un conversor de minutos a segundos. Solicitar al usuario un número de minutos y mostrar por alert la cantidad de segundos a la que equivale.
+
+
 
 
 

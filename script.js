@@ -173,10 +173,10 @@
 
 
 /* ################ BONUS 1 #########################*/
-// Crear un conversor de *días???* a segundos. Solicitar al usuario una cantidad de días y mostrar su equivalente en segundos por consola o alert, a elección. (Pueden probar también con números con coma :) 2,5 años por ejemplo).
+// Crear un conversor de años a segundos. Solicitar al usuario una cantidad de días y mostrar su equivalente en segundos por consola o alert, a elección. (Pueden probar también con números con coma :) 2,5 años por ejemplo).
 
 // let numDias = prompt("Ingrese cantidad de días");
-// alert(parseFloat(numDias)* parseFloat(86400));
+// alert((parseFloat(numDias)* 31536000) / 365);
 
 
 
@@ -184,10 +184,9 @@
 /* ################ BONUS 2 #########################*/
 // Solicitar al usuario que ingrese la cantidad de kilómetros que desea recorrer con su motocicleta. A continuación solicitar la velocidad promedio a la que desea ir en kilómetros por hora. Calcular el tiempo estimado en llegar a destino en minutos. A tener en cuenta: la velocidad se calcula en metros sobre segundos!).
 
-
-
-
-
+// let dist = prompt("Ingrese la distancia en kms que desea recorrer");
+// let vel = prompt("Ingrese la velocidad promedio en kms/h");
+// alert(((parseInt(dist) * 1000) / ((parseInt(vel) * 1000) / 3600)) / 60);
 
 
 
@@ -202,6 +201,15 @@
 // Jubilación: $7700
 // Neto a pagar: $58100
 
+let bruto = prompt("Ingrese el monto bruto del salario");
+let OS = (parseInt(bruto) * 0.03);
+let jubilacion = (parseInt(bruto) * 0.11);
+let ley = (parseInt(bruto) * 0.03);
+alert("Los descuentos a aplicar son:");
+alert("Obra social:" + " " + parseInt(OS));
+alert("Jubilación:" + " " + parseInt(jubilacion));
+alert("Ley 19032:" + " " + parseInt(ley));
+alert("El salario neto es de:" + " " + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
 
 
 

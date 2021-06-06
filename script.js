@@ -201,15 +201,26 @@
 // Jubilación: $7700
 // Neto a pagar: $58100
 
-let bruto = prompt("Ingrese el monto bruto del salario");
+// let bruto = prompt("Ingrese el salario bruto");
+// let OS = (parseInt(bruto) * 0.03);
+// let jubilacion = (parseInt(bruto) * 0.11);
+// let ley = (parseInt(bruto) * 0.03);
+// alert("Las deducciones son:");
+// alert("Obra social:" + " " + parseInt(OS));
+// alert("Jubilación:" + " " + parseInt(jubilacion));
+// alert("Ley 19032:" + " " + parseInt(ley));
+// alert("El salario neto es de:" + " " + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
+
+
+let bruto = prompt("Ingrese el salario bruto");
 let OS = (parseInt(bruto) * 0.03);
 let jubilacion = (parseInt(bruto) * 0.11);
 let ley = (parseInt(bruto) * 0.03);
-alert("Los descuentos a aplicar son:");
-alert("Obra social:" + " " + parseInt(OS));
-alert("Jubilación:" + " " + parseInt(jubilacion));
-alert("Ley 19032:" + " " + parseInt(ley));
-alert("El salario neto es de:" + " " + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
+alert("Las deducciones son:" + "\n" + 
+    "Obra social:" + " " + "$" + parseInt(OS) + "\n" +
+    "Jubilación:" + " " + "$" + parseInt(jubilacion) + "\n" +
+    "Ley 19032:" + " " + "$" + parseInt(ley) + "\n" + 
+    "El salario neto es de:" + " " + "$" + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
 
 
 

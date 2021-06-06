@@ -184,9 +184,9 @@
 /* ################ BONUS 2 #########################*/
 // Solicitar al usuario que ingrese la cantidad de kilómetros que desea recorrer con su motocicleta. A continuación solicitar la velocidad promedio a la que desea ir en kilómetros por hora. Calcular el tiempo estimado en llegar a destino en minutos. A tener en cuenta: la velocidad se calcula en metros sobre segundos!).
 
-// let dist = prompt("Ingrese la distancia en kms que desea recorrer");
-// let vel = prompt("Ingrese la velocidad promedio en kms/h");
-// alert(((parseInt(dist) * 1000) / ((parseInt(vel) * 1000) / 3600)) / 60);
+// let dist = parseFloat(prompt("Ingrese la distancia en kms que desea recorrer"));
+// let vel = parseFloat(prompt("Ingrese la velocidad promedio en kms/h"));
+// alert("El recorrido le tomará" + " " + ((dist * 1000) / ((vel * 1000) / 3600)) / 60 + " " + "minutos");
 
 
 
@@ -211,16 +211,28 @@
 // alert("Ley 19032:" + " " + parseInt(ley));
 // alert("El salario neto es de:" + " " + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
 
+// *********** Agrego saltos de línea *******************
+// let bruto = prompt("Ingrese el salario bruto");
+// let OS = (parseInt(bruto) * 0.03);
+// let jubilacion = (parseInt(bruto) * 0.11);
+// let ley = (parseInt(bruto) * 0.03);
+// alert("Las deducciones son:" + "\n" + 
+//     "Obra social:" + " " + "$" + parseInt(OS) + "\n" +
+//     "Jubilación:" + " " + "$" + parseInt(jubilacion) + "\n" +
+//     "Ley 19032:" + " " + "$" + parseInt(ley) + "\n" + 
+//     "El salario neto es de:" + " " + "$" + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
 
-let bruto = prompt("Ingrese el salario bruto");
-let OS = (parseInt(bruto) * 0.03);
-let jubilacion = (parseInt(bruto) * 0.11);
-let ley = (parseInt(bruto) * 0.03);
+// ********** Parseo en el prompt y agrego variable total deducciones **********
+let bruto = parseFloat(prompt("Ingrese el salario bruto"));
+let OS = bruto * 0.03;
+let jubilacion = bruto * 0.11;
+let ley = bruto * 0.03;
+let totalDeducciones = OS + jubilacion + ley;
 alert("Las deducciones son:" + "\n" + 
-    "Obra social:" + " " + "$" + parseInt(OS) + "\n" +
-    "Jubilación:" + " " + "$" + parseInt(jubilacion) + "\n" +
-    "Ley 19032:" + " " + "$" + parseInt(ley) + "\n" + 
-    "El salario neto es de:" + " " + "$" + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
+    "Obra social:" + " " + "$" + OS + "\n" +
+    "Jubilación:" + " " + "$" + jubilacion + "\n" +
+    "Ley 19032:" + " " + "$" + ley + "\n" + 
+    "El salario neto es de:" + " " + "$" + (bruto - totalDeducciones)); 
 
 
 

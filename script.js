@@ -101,9 +101,9 @@
 /* ################ EJERCICIO 9 #########################*/
 // 9) Solicitar al usuario la medida de la base y de la altura de un triángulo equilatero y devolver el área.
 
-// let base = prompt("Ingrese el valor de la base del triángulo en cms");
-// let altura = prompt("Ingrese el valor de la altura del triángulo en cms");
-// alert("El área del triángulo es de" + " " + (parseInt(base) * parseInt(altura) / parseInt(2)) + " " + "cms");
+// let base = parseInt(prompt("Ingrese el valor de la base del triángulo en cms"));
+// let altura = parseInt(prompt("Ingrese el valor de la altura del triángulo en cms")) ;
+// alert("El área del triángulo es de" + " " + (base * altura / 2) + " " + "cms");
 
 
 
@@ -133,8 +133,8 @@
 // Crear un conversor de Celsius a Farenheit. Solicitar al usuario su nombre y una temperatura y mostrar por consola su equivalente en Farenheit junto con un mensaje que incluya ambos datos. 
 
 // let nombre = prompt("Ingrese su nombre");
-// let tempCelsius = prompt("Ingrese un valor de temp en Celsius");
-// console.log("Su nombre es" + " " + (nombre) + " " + "y la temperatura es" + " " + (parseFloat(tempCelsius) * (parseFloat(9/5)) + parseFloat(32)) + "F");
+// let tempCelsius = parseFloat(prompt("Ingrese un valor de temp en Celsius"));
+// console.log("Su nombre es" + " " + nombre + " " + "y la temperatura es" + " " + (tempCelsius * (parseFloat(9/5)) + 32) + "F");
 
 
 
@@ -153,8 +153,8 @@
 /* ################ EJERCICIO 14 #########################*/
 // Solicitar al usuario un número y almacenarlo en una variable. Sumarle 5, multiplicar el resultado por 10 y sacar el resto de su división por 3. Mostrar el resultado sin comas.
 
-// let num = prompt("Ingresar número");
-// alert(((parseFloat(num) + parseInt(5)) * parseInt(10)) % parseInt(3));
+let num = parseInt(prompt("Ingresar número"));
+alert((((num + 5) * 10) % 3));
 
 // Para que no se vean los decimales se puede usar Math.trunc()?
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc
@@ -223,16 +223,16 @@
 //     "El salario neto es de:" + " " + "$" + (parseInt(bruto) - (parseInt(OS) + parseInt(jubilacion) + parseInt(ley)))); 
 
 // ********** Parseo en el prompt y agrego variable total deducciones **********
-let bruto = parseFloat(prompt("Ingrese el salario bruto"));
-let OS = bruto * 0.03;
-let jubilacion = bruto * 0.11;
-let ley = bruto * 0.03;
-let totalDeducciones = OS + jubilacion + ley;
-alert("Las deducciones son:" + "\n" + 
-    "Obra social:" + " " + "$" + OS + "\n" +
-    "Jubilación:" + " " + "$" + jubilacion + "\n" +
-    "Ley 19032:" + " " + "$" + ley + "\n" + 
-    "El salario neto es de:" + " " + "$" + (bruto - totalDeducciones)); 
+// let bruto = parseFloat(prompt("Ingrese el salario bruto"));
+// let OS = bruto * 0.03;
+// let jubilacion = bruto * 0.11;
+// let ley = bruto * 0.03;
+// let totalDeducciones = OS + jubilacion + ley;
+// alert("Las deducciones son:" + "\n" + 
+//     "Obra social:" + " " + "$" + OS + "\n" +
+//     "Jubilación:" + " " + "$" + jubilacion + "\n" +
+//     "Ley 19032:" + " " + "$" + ley + "\n" + 
+//     "El salario neto es de:" + " " + "$" + (bruto - totalDeducciones)); 
 
 
 
